@@ -7,7 +7,7 @@ cask "unlock" do
   desc "Lock and unlock a computer by proximity of a Bluetooth Low Energy device"
   homepage "https://github.com/bifrost-proxy/BLEUnlock"
 
-  depends_on macos: ">= :high_sierra"
+  depends_on macos: :high_sierra
 
   app "BLEUnlock.app"
 
