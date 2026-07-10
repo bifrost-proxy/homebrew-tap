@@ -1,6 +1,6 @@
 cask "unlock" do
   version "1.15.1"
-  sha256 "a734fe35d927c8543a6390614709f5dba0673051c709135fba521df2dc0e1a82"
+  sha256 "e4ba9554205f73603d78e834e72722b079c65e8c15133f24346a62232037ce59"
 
   url "https://github.com/bifrost-proxy/BLEUnlock/releases/download/v#{version}/BLEUnlock-v#{version}.dmg"
   name "BLEUnlock"
@@ -9,11 +9,12 @@ cask "unlock" do
 
   app "BLEUnlock.app"
 
-  # The release is SHA-256 verified and ad-hoc signed.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/BLEUnlock.app"]
-  end
+            # The release is SHA-256 verified and ad-hoc signed.
+            postflight do
+              system_command "/usr/bin/xattr",
+                             args: ["-dr", "com.apple.quarantine", "#{appdir}/BLEUnlock.app"]
+            end
+
 
   zap trash: [
     "~/Library/Application Scripts/com.bifrost-proxy.BLEUnlock",
