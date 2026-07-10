@@ -4,8 +4,10 @@ cask "unlock" do
 
   url "https://github.com/bifrost-proxy/BLEUnlock/releases/download/v#{version}/BLEUnlock-v#{version}.dmg"
   name "BLEUnlock"
-  desc "Lock and unlock a Mac by proximity of a Bluetooth Low Energy device"
+  desc "Lock and unlock a computer by proximity of a Bluetooth Low Energy device"
   homepage "https://github.com/bifrost-proxy/BLEUnlock"
+
+  depends_on macos: ">= :high_sierra"
 
   app "BLEUnlock.app"
 
