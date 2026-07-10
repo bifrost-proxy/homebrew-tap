@@ -1,6 +1,6 @@
 cask "unlock" do
-  version "1.15.0"
-  sha256 "de502200b01df7d161febae7a531de10543eb0a7e8a23eff1f6d6d7822554226"
+  version "1.15.1"
+  sha256 "a734fe35d927c8543a6390614709f5dba0673051c709135fba521df2dc0e1a82"
 
   url "https://github.com/bifrost-proxy/BLEUnlock/releases/download/v#{version}/BLEUnlock-v#{version}.dmg"
   name "BLEUnlock"
